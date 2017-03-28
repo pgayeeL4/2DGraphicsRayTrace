@@ -7,4 +7,17 @@ public class Source {
 
     //light source intensity
     int intensity;
+
+    public Source() {
+        this.intensity = 0;
+    }
+
+    public Source(int initialIntensity) {
+        this.intensity = initialIntensity;
+    }
+
+    //decays light intensity based on inverse aquare law
+    public double calcIntensity(int distance) {
+        return intensity/(distance*distance);
+    }
 }

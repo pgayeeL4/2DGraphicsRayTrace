@@ -6,6 +6,8 @@ package edu.graphics.project.Model;
 public class World {
 
     Source sun;
-    Entity[] stuff;
+    Entity[] objects;
+
+
 
 }
